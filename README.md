@@ -1,3 +1,4 @@
+
 # Task Manager App
 
 ## Overview
@@ -28,18 +29,29 @@ To run this application, ensure you have the following installed:
 
    ```bash
    git clone <repository-url>
+   ```
+
 2. Navigate to the project directory:
 
-    cd task-manager-app
+   ```bash
+   cd task-manager-app
+   ```
+
 3. Install dependencies:
-    
-    flutter pub get
-4. Running the App
-    
-    flutter run
 
-Project Structure
+   ```bash
+   flutter pub get
+   ```
 
+4. Running the App:
+
+   ```bash
+   flutter run
+   ```
+
+## Project Structure
+
+```
 lib/
 ├── main.dart                 # Entry point of the application
 ├── config.dart               # Configuration file for storing base URL and other constants
@@ -52,36 +64,51 @@ lib/
 │   └── task_manager_home.dart
 ├── widgets/                  # Contains reusable widgets
 │   └── task_button.dart
-Configuration
-All configurable parameters, such as the base URL, are stored in the config.dart file. Update the baseUrl constant as needed:
+```
 
+## Configuration
 
+All configurable parameters, such as the base URL, are stored in the `config.dart` file. Update the `baseUrl` constant as needed:
+
+```dart
 class AppConfig {
   static const String baseUrl = 'https://your-api-base-url.com';
 }
-Dependencies
+```
+
+## Dependencies
+
 This project uses the following dependencies:
 
-flutter: Flutter framework
-Additional dependencies can be listed in the pubspec.yaml file.
+- **flutter**: Flutter framework
 
-Screens
-Home Screen
-The Home Screen displays options to navigate to different task actions. It includes a logo and buttons for navigation.
+Additional dependencies can be listed in the `pubspec.yaml` file.
 
-Task Screens
-Create Task: Screen to create a new task.
-Get Task: Screen to fetch a specific task by ID.
-Get All Tasks: Screen to view all tasks.
-Update Task: Screen to edit an existing task.
-Delete Task: Screen to remove a task from the system.
-How to Customize
-Change Theme
-To change the theme, modify the ThemeData in main.dart to apply a custom theme to the app.
+## Screens
 
-Add New Features
-Create new screens under the screens/ directory.
-Use reusable widgets from widgets/ to maintain consistency across the app.
-Contribution
+### Home Screen
+
+The **Home Screen** displays options to navigate to different task actions. It includes a logo and buttons for navigation.
+
+### Task Screens
+
+- **Create Task**: Screen to create a new task.
+- **Get Task**: Screen to fetch a specific task by ID.
+- **Get All Tasks**: Screen to view all tasks.
+- **Update Task**: Screen to edit an existing task.
+- **Delete Task**: Screen to remove a task from the system.
+
+## How to Customize
+
+### Change Theme
+
+To change the theme, modify the `ThemeData` in `main.dart` to apply a custom theme to the app.
+
+### Add New Features
+
+1. Create new screens under the `screens/` directory.
+2. Use reusable widgets from `widgets/` to maintain consistency across the app.
+
+## Contribution
+
 Feel free to contribute to this project by submitting issues or pull requests.
-
