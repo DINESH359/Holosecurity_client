@@ -28,13 +28,13 @@ To run this application, ensure you have the following installed:
 1. Clone this repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/DINESH359/Holosecurity_client.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd task-manager-app
+   cd holosecurity_client
    ```
 
 3. Install dependencies:
